@@ -23,7 +23,7 @@ body {
     font-size: 14px;
 }
 
-.sites {
+.nav-sites {
     flex-direction: column;
     display: flex;
 }
