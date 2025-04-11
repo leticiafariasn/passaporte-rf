@@ -20,8 +20,8 @@ body {
 
 }
 
-legislation-site,
-gov-site,
-access-site {
+.legislation-site,
+.gov-site,
+.access-site {
     border-right: 1px solid #fff;
 }
