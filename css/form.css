@@ -5,8 +5,9 @@
 }
 
 body {
-    background-color: ;
-}
+    font-family: 'rawline', sans-serif;
+    font-weight: 400;
+  }
 
 .name-org {
     font-family: "rawline",helvetica,arial,sans-serif;
