@@ -24,4 +24,5 @@ body {
 .gov-site,
 .access-site {
     border-right: 1px solid #fff;
+    text-decoration: none;
 }
