@@ -22,7 +22,10 @@ body {
 .left-topbar {
     text-decoration: none;
     display: flex;
-    font-size: 11px;
-    flex-direction: column;
+    font-size: 14px;
+}
 
+.sites {
+    flex-direction: column;
+    display: flex;
 }
