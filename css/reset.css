@@ -1,9 +1,11 @@
 :root{
-    --primary-color: #134074;
-    --secundary-color: #13315C;
-    --bg-light: #0B2545;
-    --hover: #8DA9C4;
-    --primaty-text: #000000;
-    --secundary-text: #EEF4ED;
+    --color-primary-pastel-01: #c5d4eb;
+    --color-primary-pastel-02: #dbe8fb;
+    --color-primary-lighten-01: #2670e8;
+    --color-primary-lighten-02: #5992ed;
+    --color-primary-default: #1351b4;
+    --color-primary-darken-01: #0c326f;
+    --color-primary-darken-02: #071d41;
+    --font-family-base: Rawline, Raleway, sans-serif;
 }
 
