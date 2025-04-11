@@ -12,3 +12,16 @@ body {
 .name-org {
     font-family: "rawline",helvetica,arial,sans-serif;
 }
+
+.left-topbar {
+    text-decoration: none;
+    display: flex;
+    font-size: 11px;
+
+}
+
+legislation-site,
+gov-site,
+access-site {
+    border-right: 1px solid #fff;
+}
