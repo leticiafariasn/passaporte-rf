@@ -23,12 +23,6 @@ body {
     text-decoration: none;
     display: flex;
     font-size: 11px;
+    flex-direction: column;
 
-}
-
-.legislation-site a,
-.gov-site a,
-.access-site a {
-    border-right: 1px solid #fff;
-    text-decoration: none;
 }
