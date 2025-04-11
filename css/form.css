@@ -20,9 +20,9 @@ body {
 
 }
 
-.legislation-site,
-.gov-site,
-.access-site {
+.legislation-site a,
+.gov-site a,
+.access-site a {
     border-right: 1px solid #fff;
     text-decoration: none;
 }
