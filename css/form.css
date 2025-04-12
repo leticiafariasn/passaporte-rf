@@ -9,6 +9,7 @@ body {
     color: var(--color-primary-darken-02);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     padding: 1rem;
     position: relative;
   }
@@ -21,9 +22,10 @@ header {
 }
 
 .header-top {
-    background-color: #134074; /* azul escuro da sua paleta */
-    color: #EEF4ED;            /* texto claro */
+    background-color: #134074;
+    color: #EEF4ED;
     padding: 1rem 2rem;
+    width: 100%;
   }
   
   .container-header-top {
@@ -63,3 +65,8 @@ header {
     flex-direction: column;
     display: flex;
 }
+
+main {
+    padding: 2rem;
+    margin-top: 1rem;
+  }
