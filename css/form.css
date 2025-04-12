@@ -20,9 +20,38 @@ header {
     align-items: center;
 }
 
-.name-org {
+.header-top {
+    background-color: #134074; /* azul escuro da sua paleta */
+    color: #EEF4ED;            /* texto claro */
+    padding: 1rem 2rem;
+  }
+  
+  .container-header-top {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .logo-pf img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .name-org {
     font-family: "rawline",helvetica,arial,sans-serif;
 }
+
+  .name-org h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .name-org h5 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+
 
 .left-topbar {
     text-decoration: none;
