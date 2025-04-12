@@ -66,24 +66,28 @@ header {
 }
 
 .nav-sites {
-    background-color: rgba(19, 49, 92, 0.85); /* azul escuro translúcido */
-    padding: 4px 16px;
+    background-color: rgba(19, 49, 92, 0.85) !important;
+    padding: 6px 20px;
     font-size: 0.75rem;
     text-transform: uppercase;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    width: 100%;
 }
 
 .nav-sites ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
   }
   
 .nav-sites li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
   }
   
 .nav-sites li a:hover {
