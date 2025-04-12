@@ -71,15 +71,38 @@
         <section>
             <h2>Nova Solicitação de Passaporte</h2>
             <form action="/enviar" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-          
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-          
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-          
+                <div class="personal" id="personal">
+                    <h3>Dados Pessoais</h3>
+                    <label for="nome">Nome*:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="nome">Filiação 1:</label>
+                    <input type="text" id="nome" name="nome">
+                    <label for="nome">Filiação 2:</label>
+                    <input type="text" id="nome" name="nome">
+                    <label for="nome">Data de Nascimento*:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="nome">Raça ou Cor*:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="nome">Nacionalidade*:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="birth-place" id="birth-place">
+                    <h3>Local de Nascimento</h3>
+                    <label for="country">País:</label>
+                    <input type="country" id="country" name="country" required>
+                    <label for="state">Estado:</label>
+                    <input type="state" id="state" name="state" required>
+                    <label for="city">Cidade:</label>
+                    <input type="city" id="city" name="city" required>
+                </div>
+                <div class="prev-name" id="prev-name">
+                    <h3>Nomes anteriores</h3>
+                    <label for="previous">Nome anterior:</label>
+                    <input type="previous" id="previous" name="previous">
+                    <label for="motiv">Motivo da mudança:</label>
+                    <input type="motiv" id="motiv" name="motiv">
+                </div>
+        
                 <button type="submit">Enviar</button>
         </section>
 
