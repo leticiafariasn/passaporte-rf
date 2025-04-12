@@ -8,10 +8,9 @@ body {
     background-color: var(--color-primary-pastel-01);
     color: var(--color-primary-darken-02);
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+    padding: 0; /* ou o valor que preferir */
     position: relative;
+    display: block; /* <- isso é o mais importante */
   }
 
 header {
