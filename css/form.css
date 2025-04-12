@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
     padding: 0; /* ou o valor que preferir */
     position: relative;
+    /* display: block; <- isso é o mais importante */
   }
 
 header {
@@ -27,7 +28,7 @@ header {
   }
   
   .container-header-top {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 1.5rem;
   }
@@ -55,13 +56,13 @@ header {
 
 .left-topbar {
     text-decoration: none;
-    display: flex;
+    /* display: flex; */
     font-size: 14px;
 }
 
 .nav-sites {
     flex-direction: column;
-    display: flex;
+    /* display: flex; */
 }
 
 main {
