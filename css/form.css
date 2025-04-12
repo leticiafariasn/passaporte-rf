@@ -15,9 +15,11 @@ body {
 
 header {
     width: 100%;
-    background-color: var(--color-primary-lighten-01);
+    background-color: rgba(0, 0, 0, 0.15);
     color: white;
-    align-items: center;
+    align-items: center !important;
+    display: flex !important;
+
 }
 
 .header-top {
@@ -69,10 +71,11 @@ header {
     padding: 6px 20px;
     font-size: 0.75rem;
     text-transform: uppercase;
-    display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    display: flex !important;
+    align-items: center !important;
 }
 
 .nav-sites ul {
