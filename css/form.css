@@ -50,7 +50,7 @@ header {
 }
 
 .name-org h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0;
     font-weight: 700;
 }
@@ -59,11 +59,11 @@ header {
     font-size: 1rem;
     margin: 0;
     font-weight: 400;
+}
 
 .left-topbar {
     text-decoration: none;
-    /* display: flex; */
-    font-size: 14px;
+    /* display: flex;  */
 }
 
 .nav-sites {
