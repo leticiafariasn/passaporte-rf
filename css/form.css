@@ -28,7 +28,7 @@ header {
   }
   
   .container-header-top {
-    /* display: flex; */
+    display: flex;
     align-items: center;
     gap: 1.5rem;
   }
@@ -40,6 +40,10 @@ header {
   
   .name-org {
     font-family: "rawline",helvetica,arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #EEF4ED;
 }
 
   .name-org h1 {
@@ -61,9 +65,29 @@ header {
 }
 
 .nav-sites {
-    flex-direction: column;
-    /* display: flex; */
+    background-color: rgba(19, 49, 92, 0.85); /* azul escuro translúcido */
+    padding: 4px 16px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
 }
+
+.nav-sites ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-sites li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  .nav-sites li a:hover {
+    text-decoration: underline;
+  }
 
 main {
     padding: 2rem;
