@@ -14,41 +14,53 @@
     <header id="header-rf" class="header-rf">
         <div id="topbar" class="topbar">
             <div id="left-topbar" class="left-topbar">
-                <nav id="nav-sites" class="nav-sites">
-                    <ul>
-                        <li id="gov-site" class="gov-site">
-                            <a href="https://www.ceara.gov.br/">
-                                <span>Portal do Governo</span>
-                            </a>
-                        </li>
-                        <li id="legislation-site" class="legislation-site">
-                            <a href="https://www4.planalto.gov.br/legislacao">
-                                <span>Legislação</span>
-                            </a>
-                        </li>
-                        <li id="access-site" class="access-site">
-                            <a
-                                href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital">
-                                <span>Acessibilidade</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+              <nav id="nav-sites" class="nav-sites">
+                <div class="container-nav">
+                  <ul>
+                    <li><a href="https://www.ceara.gov.br/">Portal do Governo</a></li>
+                    <li><a href="https://www4.planalto.gov.br/legislacao" >Legislação</a></li>
+                    <li><a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital">Acessibilidade</a></li>
+                    <!-- caso queira a border de volta: style="border-right: 1px solid #fff;" -->
+                  </ul>
+                </div>
+              </nav>
             </div>
-        </div>
-        <span id="divider-topbar" class="divider-topbar"></span>
-        <div id="right-topbar" class="right-topbar">
-            <div id="wrapper-topbar" class="wrapper-topbar">
-                <div id="langue" class="langue"></div>
-                <div id="text-size" class="text-size"></div>
-                <div id="contrast" class="contrast"></div>
+          
+            <div id="right-topbar" class="right-topbar">
+              <div id="wrapper-topbar" class="wrapper-topbar">
+                <div id="langue" class="langue">
+                  <ul>
+                    <li>
+                        <a href="#" title="Portuguese">
+                            <img src="files/pt-br.svg" alt="pt">
+                        </a>
+                        <a href="#" title="English">
+                            <img src="files/en-us.svg" alt="en">
+                        </a>
+                        <a href="#" title="Spanish">
+                            <img src="files/es.svg" alt="es">
+                        </a>
+                        <a href="#" alt="contrast" class="contrast">
+                            <img src="files/contrast-svgrepo-com.svg" alt="img-contrast">
+                        </a>
+                  </ul>
+                </div>
+                <div id="text-size" class="text-size">
+                  <!-- Ícones ou letras "A A+ A-" aqui futuramente -->
+                </div>
+                <div id="contrast" class="contrast">
+                    
+                </div>
+              </div>
             </div>
-        </div>
-        </div>
+          </div>
+          
         <div id="header-top" class="header-top">
             <div class="container-header-top">
                 <div id="logo-pf" class="logo-pf">
-                    <img src="files/logo-pf.png" alt="Logotipo da Polícia Federal">
+                    <a href="https://www.gov.br/pf/pt-br" >
+                        <img src="files/logo-pf.png" alt="Logotipo da Polícia Federal">
+                    </a>
                 </div>
                 <div id="name-org" class="name-org">
                     <h1>Divisão de Passaporte</h1>
@@ -57,14 +69,21 @@
             </div>
         </div>
 
-        <div id="header-icons" class="header-icons"></div>
-        <div id="logo-gov"></div>
-        </div>
         <div id="header-bottom" class="header-bottom">
-            <div id="menu-bar" class="menu-bar"></div>
+            <nav class="bottom-nav">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Solicitação de passaporte</a></li>
+                    <li><a href="#">Agendamento de atendimento</a></li>
+                    <li><a href="#">Outros serviços</a></li>
+                    </ul>
+            </nav>
+            <!-- <div id="menu-bar" class="menu-bar">
+
+            </div>
             <div id="request" class="request"></div>
             <div id="schedule" class="schedule"></div>
-            <div id="otherservices" class="otherservices"></div>
+            <div id="otherservices" class="otherservices"></div> -->
 
         </div>
 
