@@ -13,6 +13,13 @@ body {
     position: relative;
   }
 
+header {
+    width: 100%;
+    background-color: var(--color-primary-lighten-01);
+    color: white;
+    align-items: center;
+}
+
 .name-org {
     font-family: "rawline",helvetica,arial,sans-serif;
 }
