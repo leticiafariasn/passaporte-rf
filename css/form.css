@@ -128,8 +128,8 @@ header {
 }
 
 .contrast img {
-  width: 24px;
-  height: auto;
+  width: 19px;
+  height: 19px;
   cursor: pointer;
   filter: invert(1) brightness(1) drop-shadow(0 0 1px #a3a3a3);
 }
