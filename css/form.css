@@ -642,3 +642,31 @@ footer {
   background-color: #003f7f;
   transform: scale(1.05);
 }
+
+:root {
+  --bg-color: #f6f6f6;
+  --text-color: #000000;
+  --header-bg: #134074;
+  --footer-bg: #0c4094;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --header-bg: #0d1b2a;
+  --footer-bg: #1a2c48;
+}
+
+/* Aplicando as variáveis */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--header-bg);
+}
+
+footer {
+  background-color: var(--footer-bg);
+}

@@ -10,6 +10,25 @@
 
 </head>
 
+<script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+    }
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      const contrastBtn = document.getElementById("contrast-toggle");
+      if (contrastBtn) {
+        contrastBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          toggleTheme();
+        });
+      }
+    });
+  </script>
+
 <body>
     <header id="header-rf" class="header-rf">
         <div id="topbar" class="topbar">
@@ -42,7 +61,7 @@
                                 <a href="#" title="Spanish">
                                     <img src="files/es.svg" alt="es">
                                 </a>
-                                <a href="#" alt="contrast" class="contrast">
+                                <a href="#" title="Ativar modo escuro" onclick="toggleTheme()">
                                     <img src="files/contrast-svgrepo-com.svg" alt="img-contrast">
                                 </a>
                         </ul>
@@ -50,9 +69,7 @@
                     <div id="text-size" class="text-size">
                         <!-- Ícones ou letras "A A+ A-" aqui futuramente -->
                     </div>
-                    <div id="contrast" class="contrast">
 
-                    </div>
                 </div>
             </div>
         </div>
@@ -102,7 +119,7 @@
                         <li><a href="#">Revisar dados</a></li>
                     </ul>
                 </nav>
-                
+
                 <form action="/enviar" method="post">
                     <div class="personal" id="personal">
                         <h3>Dados Pessoais</h3>
@@ -624,70 +641,71 @@
         <div class="footer-container">
             <div class="footer-logo">
                 <a href="https://www.gov.br/pt-br" target="_blank" rel="noopener noreferrer">
-                  <img src="files/govbr.png" alt="Gov.br Logo" class="logo-govbr">
+                    <img src="files/govbr.png" alt="Gov.br Logo" class="logo-govbr">
                 </a>
-              </div>
-          <div class="footer-columns">
-            <div class="footer-column">
-              <h4>Assuntos</h4>
-              <ul>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Academia Nacional de Polícia</a></li>
-                <li><a href="#">Acordos de Cooperação</a></li>
-                <li><a href="#">Adoção Internacional</a></li>
-              </ul>
             </div>
-            <div class="footer-column">
-              <h4>Acesso à Informação</h4>
-              <ul>
-                <li><a href="#">Institucional</a></li>
-                <li><a href="#">Participação Social</a></li>
-                <li><a href="#">Convênios</a></li>
-                <li><a href="#">Receitas e Despesas</a></li>
-              </ul>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Assuntos</h4>
+                    <ul>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Academia Nacional de Polícia</a></li>
+                        <li><a href="#">Acordos de Cooperação</a></li>
+                        <li><a href="#">Adoção Internacional</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Acesso à Informação</h4>
+                    <ul>
+                        <li><a href="#">Institucional</a></li>
+                        <li><a href="#">Participação Social</a></li>
+                        <li><a href="#">Convênios</a></li>
+                        <li><a href="#">Receitas e Despesas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Composição</h4>
+                    <ul>
+                        <li><a href="#">Quem é quem</a></li>
+                        <li><a href="#">Galeria de Diretores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Canais de Atendimento</h4>
+                    <ul>
+                        <li><a href="#">Ouvidoria</a></li>
+                        <li><a href="#">Unidades</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-column">
-              <h4>Composição</h4>
-              <ul>
-                <li><a href="#">Quem é quem</a></li>
-                <li><a href="#">Galeria de Diretores</a></li>
-              </ul>
+            <div class="footer-col social">
+                <h4>REDES SOCIAIS</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="files/instagram.svg" alt="Instagram" /></a>
+                    <a href="#"><img src="files/youtube.svg" alt="YouTube" /></a>
+                </div>
             </div>
-            <div class="footer-column">
-              <h4>Canais de Atendimento</h4>
-              <ul>
-                <li><a href="#">Ouvidoria</a></li>
-                <li><a href="#">Unidades</a></li>
-              </ul>
-            </div>
+
         </div>
-        <div class="footer-col social">
-            <h4>REDES SOCIAIS</h4>
-            <div class="social-icons">
-              <a href="#"><img src="files/instagram.svg" alt="Instagram" /></a>
-              <a href="#"><img src="files/youtube.svg" alt="YouTube" /></a>
-            </div>
-          </div>
-        
-      </div>
     </footer>
 
     <div id="popup-alert" class="popup-alert">
         <div class="popup-content">
-          <p><strong>ATENÇÃO!<br></o:br></strong> Não utilize o botão voltar do seu navegador,<br>pois todos os dados serão perdidos.<br> <strong>Utilize apenas os botões do próprio formulário.</strong></p>
-          <button onclick="closePopup()">Entendi</button>
+            <p><strong>ATENÇÃO!<br></o:br></strong> Não utilize o botão voltar do seu navegador,<br>pois todos os dados
+                serão perdidos.<br> <strong>Utilize apenas os botões do próprio formulário.</strong></p>
+            <button onclick="closePopup()">Entendi</button>
         </div>
-      </div>
+    </div>
 
-      <script>
+    <script>
         window.onload = function () {
-          document.getElementById("popup-alert").style.display = "flex";
+            document.getElementById("popup-alert").style.display = "flex";
         };
-      
+
         function closePopup() {
-          document.getElementById("popup-alert").style.display = "none";
+            document.getElementById("popup-alert").style.display = "none";
         }
-      </script>
+    </script>
 
 </body>
 
