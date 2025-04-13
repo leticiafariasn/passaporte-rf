@@ -11,7 +11,6 @@ body {
   min-height: 100vh;
   padding: 0;
   position: relative;
-  /* display: block;*/
 }
 
 header {
@@ -26,10 +25,6 @@ header {
   color: #EEF4ED;
   padding: 1rem 2rem;
   width: 100%;
-  /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);    background-image: url("../files/header-detail.png");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: auto 60px; ajuste conforme o tamanho da imagem */
 }
 
 .container-header-top {
@@ -309,8 +304,7 @@ h2 {
 }
 
 .form-tabs li.active a {
-  background-color: #134074; /* remove fundo escuro */
-  /* border-bottom: 2px solid white; linha branca embaixo */
+  background-color: #134074; 
   box-shadow: 5px 5px 5px rgba(175, 175, 175, 0.13);
   color: #fff; 
 }
@@ -338,7 +332,7 @@ h3 {
 }
 
 section h3 {
-  display: inline-block; /* ⬅ Isso limita a largura ao conteúdo do h3 */
+  display: inline-block; 
   border-bottom: 2px solid #1961a8;
   padding-bottom: 0.25rem;
   margin-bottom: 1rem;
@@ -422,8 +416,8 @@ input[type="checkbox"] {
 }
 
 .search-input::placeholder {
-  color: #333; /* ou #444, mais escuro ainda */
-  opacity: 1;  /* garante que a cor não fique esmaecida */
+  color: #333;
+  opacity: 1;  
 }
 
 .add-btn {
@@ -553,7 +547,7 @@ footer {
 }
 
 .social-icons img {
-  width: 20px; /* tamanho base */
+  width: 20px; 
   height: 20px;
   filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
@@ -666,7 +660,6 @@ footer {
   --footer-bg: #1a2c48;
 }
 
-/* Aplicando as variáveis */
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -678,4 +671,96 @@ header {
 
 footer {
   background-color: var(--footer-bg);
+}
+[data-theme="dark"] .header-rf {
+  background: linear-gradient(0deg, #0a1938 0%, #0d2b5c 70%, #14427a 100%);
+}
+
+[data-theme="dark"] .bottom-nav {
+  background-color: #000;
+  border-top: 1px solid #222;
+}
+
+[data-theme="dark"] .bottom-nav a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+[data-theme="dark"] .bottom-nav a:hover {
+  color: #00bfff;
+}
+
+[data-theme="dark"] .header-bottom {
+  border-top: none;
+}
+
+[data-theme="dark"] .form-tabs {
+  background-color: #0a1f44;
+  color: #fff;
+  background: linear-gradient(0deg, #0a1938 0%, #0d2b5c 70%, #14427a 100%);
+}
+
+[data-theme="dark"] .form-tabs a {
+  color: #fff;
+}
+
+[data-theme="dark"] .form-tabs li.active a {
+  background-color: #0a1f44;
+  border-bottom: 2px solid #fff;
+  box-shadow: none;
+}
+
+[data-theme="dark"] h2 {
+  color: #fff;
+}
+
+[data-theme="dark"] h3 {
+ color: #fff;
+}
+
+[data-theme="dark"] .site-footer {
+  background: linear-gradient(0deg, #0e2c52 0%, #0d2b5c 70%, #0a1938 100%);
+}
+
+[data-theme="dark"] .contrast {
+  filter: invert(1) brightness(1) drop-shadow(0 0 2px #ffffff);
+}
+
+[data-theme="dark"] .input-group input,
+[data-theme="dark"] .input-group select,
+[data-theme="dark"] .input-group textarea {
+  background-color: #000;     
+  color: #fff;                
+  border: 0.5px solid #ffffff54;    
+}
+
+[data-theme="dark"] .input-group input::placeholder,
+[data-theme="dark"] .input-group textarea::placeholder {
+  color: #fff;           
+  opacity: 0.8;             
+}
+
+[data-theme="dark"] .search-form input[type="text"] {
+  background-color: #000;  
+  color: #fff;  
+  border: 0.5px solid #ffffff54; 
+}
+
+[data-theme="dark"] .search-form input[type="text"]::placeholder {
+  color: #fff; 
+  opacity: 0.7;
+}
+
+[data-theme="dark"] .search-form button {
+  background-color: #0e4091;   
+  color: #fff;             
+  border: 1px solid #0e4091;
+}
+
+[data-theme="dark"] .search-form button:hover {
+  background-color: #13315c;   
+}
+
+[data-theme="dark"] .form-actions button {
+  background: linear-gradient(0deg, #1c376d 0%, #0d2b5c 70%, #14427a 100%);
 }

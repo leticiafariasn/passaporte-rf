@@ -18,16 +18,16 @@
       html.setAttribute('data-theme', newTheme);
     }
   
-    document.addEventListener("DOMContentLoaded", function () {
-      const contrastBtn = document.getElementById("contrast-toggle");
+    document.addEventListener('DOMContentLoaded', () => {
+      const contrastBtn = document.querySelector('.contrast');
       if (contrastBtn) {
-        contrastBtn.addEventListener("click", function (e) {
+        contrastBtn.addEventListener('click', (e) => {
           e.preventDefault();
           toggleTheme();
         });
       }
     });
-  </script>
+</script>
 
 <body>
     <header id="header-rf" class="header-rf">
@@ -41,7 +41,6 @@
                             <li><a
                                     href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital">Acessibilidade</a>
                             </li>
-                            <!-- caso queira a border de volta: style="border-right: 1px solid #fff;" -->
                         </ul>
                     </div>
                 </nav>
@@ -67,7 +66,7 @@
                         </ul>
                     </div>
                     <div id="text-size" class="text-size">
-                        <!-- Ícones ou letras "A A+ A-" aqui futuramente -->
+                        <!-- pensando se boto os ícones ou letras "A A+ A-" aqui -->
                     </div>
 
                 </div>
