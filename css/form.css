@@ -128,10 +128,19 @@ header {
 }
 
 .contrast img {
-  width: 18px;
+  width: 24px;
   height: auto;
   cursor: pointer;
   filter: invert(1) brightness(1) drop-shadow(0 0 1px #a3a3a3);
+}
+
+a.contrast {
+  display: inline-block;
+  padding: 0;
+  margin-left: 10px;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
 }
 
 .container-nav a {
